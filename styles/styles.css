@@ -1,0 +1,121 @@
+/* Font Yeseva One */
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+
+/* Font Nunito Sans */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wdth,wght,YTLC@0,6..12,75..125,200..1000,440..540;1,6..12,75..125,200..1000,440..540&display=swap');
+
+
+@import url(reset.css);
+@import url(header.css);
+@import url(hero.css);
+@import url(section-second.css);
+@import url(section-third.css);
+@import url(section-fourth.css);
+@import url(section-fifth.css);
+@import url(section-sixth.css);
+@import url(section-seventh.css);
+
+@import url(footer.css);
+
+
+
+
+body, .button {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 11px;
+    color: #FFFFFF;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+.title {
+    font-family: "Yeseva One", serif;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 132.8%;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+/* Mobile - no more than 767.98px*/
+@media screen and (max-width: 767.98px) {
+    .title {
+        font-size: 23px;
+    }
+}
+
+.subtitle {
+    font-family: "Yeseva One", serif;
+    color: #E3B873;
+}
+
+.wrapper {
+    width: calc(100% - 40px);
+    max-width: 1263px;
+    margin: 0 auto;
+}
+
+/* Tablet, Mobile - no more than 1299.98px*/
+@media screen and (max-width: 1299.98px) {
+    .wrapper {
+        width: calc(100% - 40px);
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+}
+
+.button {
+    text-transform: uppercase;
+    height: fit-content;
+    padding: 16px 32px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.button__primary {
+    background-color: #E3B873;
+    border: none;
+}
+
+.button__secondary {
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+}
+
+.line {
+    height: 1.5px;
+    width: 32px;
+    background-color: #E3B873;
+}
+
+/* Checkbox */
+.label-checkbox {
+    cursor: pointer;
+    display: flex;
+}
+
+.checkbox {
+    display: none;
+}
+
+.custom-checkbox {
+    display: flex;
+    width: 18px;
+    height: 18px;
+    background: #E3B873;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-checkbox::before {
+    content: url(../images/check-box.svg);
+    opacity: 0;
+    transition: .2s;
+}
+
+.checkbox:checked + .custom-checkbox::before {
+    opacity: 1;
+}

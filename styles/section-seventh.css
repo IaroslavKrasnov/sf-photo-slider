@@ -1,0 +1,204 @@
+.section-seventh {
+    background-image: url(../images/section-seventh_bg.png);
+    background-size: cover;
+    position: relative;
+    padding-bottom: 66px;
+}
+
+/* Mobile - no more than 767.98px*/
+@media screen and (max-width: 767.98px) {
+    .section-seventh {
+        background-image: none;
+        background-color: #181818;
+        padding-top: 172px;
+        margin-top: -120px;
+        padding-bottom: 48px;
+    }
+}
+
+.section-seventh::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(24, 24, 24, 0.9);
+}
+
+.section-seventh__flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.section-seventh__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 44px;
+    background-color: #181818;
+    padding: 32px 180px;
+    width: max-content;
+    margin-top: -222px;
+}
+
+/* Tablet, Mobile - no more than 1299.98px*/
+@media screen and (max-width: 1299.98px) {
+    .section-seventh__form {
+        gap: 24px;
+        padding: 32px 32px;
+    }
+}
+
+/* Mobile - no more than 767.98px*/
+@media screen and (max-width: 767.98px) {
+    .section-seventh__form {
+        margin-top: 0px;
+        padding: 0px 0px;
+    }
+}
+
+.section-seventh__form_title {
+    font-family: "Yeseva One", serif;
+    font-size: 20px;
+    line-height: 138.6%;
+    text-transform: uppercase;
+}
+
+.section-seventh__form_fields {
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+    width: 520px;
+}
+
+/* Mobile - no more than 767.98px*/
+@media screen and (max-width: 767.98px) {
+    .section-seventh__form_fields {
+        width: 100%;
+        gap: 58px;
+    }
+}
+
+.section-seventh__form_fields_row {
+    display: flex;
+    gap: 58px;
+}
+
+/* Mobile - no more than 767.98px*/
+@media screen and (max-width: 767.98px) {
+    .section-seventh__form_fields_row {
+        flex-direction: column;
+    }
+}
+
+.section-seventh__form_fields_field {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-bottom: rgba(255, 255, 255, .15) solid 1px;
+}
+
+.section-seventh__form_fields_field_name {
+    font-size: 13px;
+    line-height: 163.7%;
+    color: rgba(255, 255, 255, .5);
+}
+
+.section-seventh__form_fields_field_value {
+    font-size: 14px;
+    line-height: 163.7%;
+}
+
+.section-seventh__form_checkbox_text {
+    font-size: 14px;
+    line-height: 163.7%;
+    margin-left: 8px;
+    text-align: center;
+}
+
+.section-seventh__form_button {
+    text-transform: uppercase;
+    min-width: 200px;
+}
+
+/* Mobile - no more than 767.98px*/
+@media screen and (max-width: 767.98px) {
+    .section-seventh__form_button {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+.section-seventh__form_contact {
+    font-family: "Yeseva One", serif;
+    font-size: 20px;
+    line-height: 138.6%;
+    text-transform: uppercase;
+    color: #E3B873;
+    width: 588px;
+    margin-top: 52px;
+}
+
+/* Mobile - no more than 767.98px*/
+@media screen and (max-width: 767.98px) {
+    .section-seventh__form_contact {
+        width: 100%;
+        max-width: 500px;
+        text-align: center;
+        order: 2;
+    }
+}
+
+.section-seventh__form_contact_icons {
+    display: flex;
+    gap: 16px;
+    margin-top: 28px;
+}
+
+/* Mobile - no more than 767.98px*/
+@media screen and (max-width: 767.98px) {
+    .section-seventh__form_contact_icons {
+        order: 3;
+    }
+}
+
+.section-seventh__form_contact_icon {
+    display: flex;
+    background-color: #E3B873;
+    border-radius: 50px;
+    height: 28px;
+    width: 28px;
+}
+
+.section-seventh__form_contact_icon > img {
+    margin: auto auto;
+}
+
+.section-seventh__form_map {
+    background-image: url(../images/map.png);
+    width: 925px;
+    height: 465px;
+    background-size: cover;
+    margin-top: 44px;
+}
+
+/* Tablet, Mobile - no more than 1299.98px*/
+@media screen and (max-width: 1299.98px) {
+    .section-seventh__form_map {
+        background-image: url(../images/map.png);
+        width: 692px;
+        height: 348px;
+    }
+}
+
+/* Mobile - no more than 767.98px*/
+@media screen and (max-width: 767.98px) {
+    .section-seventh__form_map {
+        background-image: url(../images/map.png);
+        width: 375px;
+        height: 188px;
+    }
+}

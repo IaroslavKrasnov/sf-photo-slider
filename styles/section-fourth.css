@@ -1,0 +1,298 @@
+.section-fourth {
+    height: fit-content;
+    padding-bottom: 242px;
+}
+
+/* Tablet, Mobile - no more than 1299.98px*/
+@media screen and (max-width: 1299.98px) {
+    .section-fourth {
+        padding-bottom: 128px;
+    }
+}
+
+/* Mobile - no more than 767.98px*/
+@media screen and (max-width: 767.98px) {
+    .section-fourth {
+        padding-top: 84px;
+    }
+}
+
+.section-fourth__title {
+    font-family: "Yeseva One", serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 138.6%;
+    color: #181818;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* Mobile - no more than 767.98px*/
+@media screen and (max-width: 767.98px) {
+    .section-fourth__title {
+        font-size: 22px;
+        line-height: 138.6%;
+    }
+}
+
+.section-fourth__instruments {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-top: 12px;
+    justify-content: center;
+}
+
+/* Mobile - no more than 767.98px*/
+@media screen and (max-width: 767.98px) {
+    .section-fourth__instruments {
+        margin-top: 16px;
+    }
+}
+
+.section-fourth__repair-section {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: 1fr;
+    column-gap: 32px;
+    row-gap: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 32px;
+}
+
+/* Mobile - no more than 767.98px*/
+@media screen and (max-width: 767.98px) {
+    .section-fourth__repair-section {
+        row-gap: 60px;
+    }
+}
+
+.section-fourth__repair-section_item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    max-width: 492px;
+    min-width: 300px;
+}
+
+.section-fourth__repair-section_item_bg {
+    background-image: url(../images/repair-section_item_1.png);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.section-fourth__repair-section_item_desc {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 32px;
+    margin-top: -128px;
+    margin-right: 32px;
+    margin-left: 32px;
+    background-color: #FFFFFF;
+    height: 100%;
+}
+
+/* Mobile - no more than 767.98px*/
+@media screen and (max-width: 767.98px) {
+    .section-fourth__repair-section_item_desc {
+        margin-left: 0px;
+        margin-right: 64px;
+        max-width: 288px;
+    }
+}
+
+.section-fourth__repair-section_item_desc_title {
+    font-family: "Yeseva One", serif;
+    font-size: 18px;
+    line-height: 138.6%;
+    color: #363636;
+    height: max-content;
+}
+
+.section-fourth__repair-section_item_desc_list {
+    list-style-type: disc;
+    margin-top: 12px;
+    margin-bottom: 24px;
+}
+
+.section-fourth__repair-section_item_desc_list > * {
+    font-size: 13px;
+    line-height: 204.6%;
+    color: #959595;
+}
+
+.section-fourth__repair-section_item_desc_button {
+    align-self: flex-start;
+    margin-left: -32px;
+}
+
+.section-fourth__repair-section-2 {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 560px));
+    grid-auto-rows: auto;
+}
+
+/* Tablet, Mobile - no more than 1299.98px*/
+@media screen and (max-width: 1299.98px) {
+    .section-fourth__repair-section-2 {
+        justify-content: center;
+        gap: 16px;
+        grid-template-columns: 5fr 6fr;
+    }
+}
+
+/* Mobile - no more than 767.98px*/
+@media screen and (max-width: 767.98px) {
+    .section-fourth__repair-section-2 {
+        display: none;
+    }
+}
+
+.section-fourth__repair-section-2_list {
+    background-image: url(../images/repair-section-2-bg.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 118px 60px 54px 220px;
+    max-height: 660px;
+}
+
+/* Tablet, Mobile - no more than 1299.98px*/
+@media screen and (max-width: 1299.98px) {
+    .section-fourth__repair-section-2_list {
+        gap: 80px;
+        padding-left: 200px;
+    }
+}
+
+.section-fourth__repair-section-2_list_item {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.section-fourth__repair-section-2_list_number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E3B873;
+    min-width: 44px;
+    height: 44px;
+    border-radius: 30px;
+}
+
+.section-fourth__repair-section-2_list_number_value {
+    font-family: "Yeseva One", serif;
+    font-size: 18px;
+    line-height: 138.6%;
+}
+
+.section-fourth__repair-section-2_list_text {
+    font-size: 14px;
+    color: #363636;
+}
+
+.section-fourth__repair-section_flex {
+    display: flex;
+    flex-direction: column;
+    margin-top: 118px;
+}
+
+.section-fourth__repair-section_form {
+    display: flex;
+    flex-direction: column;
+    background-color: #131313;
+    padding: 28px 48px;
+}
+
+/* Tablet, Mobile - no more than 1299.98px*/
+@media screen and (max-width: 1299.98px) {
+    .section-fourth__repair-section_form {
+        padding: 16px 24px;
+        min-width: 320px;
+    }
+}
+
+.section-fourth__repair-section_form_title {
+    font-size: 18px;
+    line-height: 143.2%;
+    align-self: center;
+}
+
+.section-fourth__repair-section_form_fields {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    margin-top: 40px;
+}
+
+.section-fourth__repair-section_form_fields_field {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-bottom: rgba(255, 255, 255, .15) solid 1px;
+}
+
+.section-fourth__repair-section_form_fields_field_name {
+    font-size: 13px;
+    line-height: 163.7%;
+    color: rgba(255, 255, 255, .5);
+}
+
+.section-fourth__repair-section_form_fields_field_value {
+    font-size: 14px;
+    line-height: 163.7%;
+}
+
+.section-fourth__repair-section_form_checkbox {
+    margin-top: 16px;
+}
+
+.section-fourth__repair-section_form_checkbox_text {
+    font-size: 14px;
+    line-height: 163.7%;
+    margin-left: 8px;
+    text-align: center;
+}
+
+.section-fourth__repair-section_form_button {
+    margin-top: 56px;
+    align-self: end;
+}
+
+.section-fourth__repair-section_discount {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    margin-top: 36px;
+    margin-left: 32px;
+}
+
+/* Tablet, Mobile - no more than 1299.98px*/
+@media screen and (max-width: 1299.98px) {
+    .section-fourth__repair-section_discount {
+        margin-left: 0px;
+    }
+}
+
+.section-fourth__repair-section_discount_icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E3B873;
+    min-width: 72px;
+    height: 72px;
+    border-radius: 30px;
+}
+
+.section-fourth__repair-section_discount_text {
+    font-size: 18px;
+    line-height: 133.2%;
+    color: #E3B873;
+}

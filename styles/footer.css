@@ -1,0 +1,18 @@
+.footer {
+    background-color: #181818;
+}
+
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+/* Tablet, Mobile - no more than 1299.98px*/
+@media screen and (max-width: 1299.98px) {
+    .footer {
+        display: none;
+    }
+}

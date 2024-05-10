@@ -1,0 +1,297 @@
+.section-second {
+    background-color: #131313;
+    height: fit-content;
+    padding-top: 108px;
+    padding-bottom: 414px;
+}
+
+/* Mobile - no more than 767.98px*/
+@media screen and (max-width: 767.98px) {
+    .section-second {
+        padding-top: 36px;
+        padding-bottom: 172px;
+    }
+}
+
+.section-second__grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas:
+        ". . . . . app_name app_name app_name app_name app_name app_name ."
+        "project project project . . photo photo photo photo photo photo photo"
+        "desc desc desc desc desc photo photo photo photo photo photo photo"
+        "city city area area area photo photo photo photo photo photo photo"
+        "time time cost cost cost photo photo photo photo photo photo photo"
+        "slider slider slider slider slider photo photo photo photo photo photo photo";
+    column-gap: 20px;
+    row-gap: 32px;
+}
+
+/* Tablet, Mobile - no more than 1299.98px*/
+@media screen and (max-width: 1299.98px) {
+    .section-second__grid {
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas:
+            "project project project project project project city city city area area area"
+            "desc desc desc desc desc . time time time cost cost cost"
+            ". app_name app_name app_name app_name app_name app_name app_name app_name app_name app_name ."
+            "photo photo photo photo photo photo photo photo photo photo photo photo"
+            ". . slider slider slider slider slider slider slider slider . .";
+        column-gap: 20px;
+        row-gap: 32px;
+    }
+}
+
+/* Mobile - no more than 767.98px*/
+@media screen and (max-width: 767.98px) {
+    .section-second__grid {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-areas:
+            ". project project project project ."
+            "desc desc desc desc desc desc"
+            "photo photo photo photo photo photo"
+            "city city city area area area"
+            "time time time cost cost cost";
+        column-gap: 20px;
+        row-gap: 32px;
+    }
+}
+
+.section-second__app-name {
+    display: flex;
+    justify-content: space-between;
+    grid-area: app_name;
+}
+
+/* Mobile - no more than 767.98px*/
+@media screen and (max-width: 767.98px) {
+    .section-second__app-name {
+        display: none;
+    }
+}
+
+.section-second__app-name_item {
+    font-family: "Yeseva One", serif;
+    font-size: 14px;
+    line-height: 138.6%;
+    color: rgba(255, 255, 255, 0.3);
+    text-transform: uppercase;
+}
+
+.section-second__app-name_item.active {
+    border-bottom: 1px solid #E3B873;
+    color: #E3B873;
+}
+
+.section-second__app-name_item:hover {
+    border-bottom: 1px solid #ffffff;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+
+.section-second__project {
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 138.6%;
+    letter-spacing: -7%;
+    text-transform: uppercase;
+    margin-left: 40px;
+    grid-area: project;
+}
+
+/* Tablet, Mobile - no more than 1299.98px*/
+@media screen and (max-width: 1299.98px) {
+    .section-second__project {
+        margin-left: 0px;
+    }
+}
+
+/* Mobile - no more than 767.98px*/
+@media screen and (max-width: 767.98px) {
+    .section-second__project {
+        text-align: center;
+    }
+}
+
+.section-second__description {
+    font-size: 14px;
+    line-height: 191%;
+    margin: 0px 20px 10px 40px;
+    grid-area: desc;
+}
+
+/* Tablet, Mobile - no more than 1299.98px*/
+@media screen and (max-width: 1299.98px) {
+    .section-second__description {
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: -30px;
+    }
+}
+
+/* Mobile - no more than 767.98px*/
+@media screen and (max-width: 767.98px) {
+    .section-second__description {
+        text-align: center;
+        justify-self: center;
+        margin-top: -12px;
+        max-width: 600px;
+    }
+}
+
+.section-second__property {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-left: 40px;
+}
+
+.section-second__property_city {
+    grid-area: city;
+}
+
+.section-second__property_apartment-area {
+    grid-area: area;
+}
+
+.section-second__property_repair-time {
+    grid-area: time;
+}
+
+.section-second__property_repair-cost {
+    grid-area: cost;
+}
+
+.section-second__property-name {
+    font-size: 18px;
+    line-height: 138.6%;
+    text-transform: uppercase;
+}
+
+.section-second__property-value {
+    font-size: 13px;
+    line-height: 163.7%;
+    min-height: 44px;
+}
+
+.section-second__slider {
+    display: flex;
+    gap: 30px;
+    grid-area: slider;
+    margin-top: 48px;
+    margin-left: 40px;
+    align-items: center;
+}
+
+.section-second__slider_dots {
+    display: flex;
+    gap: 18px;
+}
+
+.section-second__slider_dots_dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 30px;
+    background-color: #ffffff4d;
+}
+
+.section-second__slider_dots_dot.active {
+    background-color: #ffffff;
+}
+
+.section-second__slider_dots_dot:hover {
+    background-color: #ffffff8c;
+    cursor: pointer;
+}
+
+.section-second__slider_arrow:hover {
+    cursor: pointer;
+}
+
+/* Tablet, Mobile - no more than 1299.98px*/
+@media screen and (max-width: 1299.98px) {
+    .section-second__slider {
+        justify-content: center;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+}
+
+/* Mobile - no more than 767.98px*/
+@media screen and (max-width: 767.98px) {
+    .section-second__slider {
+        display: none;
+    }
+}
+
+.section-second__slider_item:nth-of-type(2) {
+    margin-left: 32px;
+}
+
+.section-second__slider_item:nth-of-type(3) {
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.section-second__slider_item:nth-of-type(4) {
+    margin-right: 32px;
+}
+
+.section-second__apartments-photo-area {
+    grid-area: photo;
+    position: relative;
+}
+
+.section-second__apartments-photo {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 1000ms ease;
+}
+
+.section-second__apartments-photo.active {
+    opacity: 1;
+}
+
+.section-second__apartments-photo_arrow-left {
+    display: none;
+}
+
+/* Mobile - no more than 767.98px*/
+@media screen and (max-width: 767.98px) {
+    .section-second__apartments-photo_arrow-left {
+        position: absolute;
+        left: 12px;
+        top: 46%;
+        border-radius: 50px;
+        display: flex;
+        width: 36px;
+        height: 36px;
+        justify-content: center;
+        align-items: center;
+        background-color:#E3B873;
+    }
+}
+
+.section-second__apartments-photo_arrow-right {
+    display: none;
+}
+
+/* Mobile - no more than 767.98px*/
+@media screen and (max-width: 767.98px) {
+    .section-second__apartments-photo_arrow-right {
+        position: absolute;
+        right: 12px;
+        top: 46%;
+        border-radius: 50px;
+        display: flex;
+        width: 36px;
+        height: 36px;
+        justify-content: center;
+        align-items: center;
+        background-color:#E3B873;
+    }
+}

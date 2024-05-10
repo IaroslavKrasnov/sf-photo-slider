@@ -1,0 +1,229 @@
+.section-third {
+    margin-top: -324px;
+    padding-bottom: 148px;
+    height: fit-content;
+}
+
+/* Mobile - no more than 767.98px*/
+@media screen and (max-width: 767.98px) {
+    .section-third {
+        margin-top: -114px;
+        padding-bottom: 0px;
+        background-color: #181818;
+    }
+}
+
+.section-third__flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-third__title {
+    font-family: "Yeseva One", serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 138.6%;
+    text-transform: uppercase;
+}
+
+/* Mobile - no more than 767.98px*/
+@media screen and (max-width: 767.98px) {
+    .section-third__title {
+        font-size: 22px;
+    }
+}
+
+.section-third__camera {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.section-third__video {
+    background-image: url(../images/video.png);
+    background-size: cover;
+    height: 494px;
+    width: 877px;
+    margin-top: 32px;
+    position: relative;
+}
+
+/* Tablet, Mobile - no more than 1299.98px*/
+@media screen and (max-width: 1299.98px) {
+    .section-third__video {
+        height: 396px;
+        width: 702px;
+    }
+}
+
+/* Mobile - no more than 767.98px*/
+@media screen and (max-width: 767.98px) {
+    .section-third__video {
+        height: 192px;
+        width: 338px;
+    }
+}
+
+.section-third__play {
+    position: absolute;
+    top: 33%;
+    left: 42%;
+}
+
+/* Mobile - no more than 767.98px*/
+@media screen and (max-width: 767.98px) {
+    .section-third__play {
+        top: 15%;
+        left: 28%;
+    }
+}
+
+.section-third__line_long {
+    height: 1.5px;
+    width: 56px;
+    background-color: #E3B873;
+    margin-top: 32px;
+}
+
+.section-third__text {
+    font-size: 18px;
+    line-height: 204.6%;
+    color: #363636;
+    text-align: center;
+    margin-top: 32px;
+    max-width: 680px;
+}
+
+/* Mobile - no more than 767.98px*/
+@media screen and (max-width: 767.98px) {
+    .section-third__text {
+        font-size: 11px;
+        line-height: 169.8%;
+        color: #ffffff;
+        text-align: center;
+        margin-top: 20px;
+        max-width: 480px;
+    }
+}
+
+.section-third__form {
+    display: flex;
+    justify-content: space-between;
+    width: 768px;
+    margin-top: 92px;
+}
+
+/* Tablet, Mobile - no more than 1299.98px*/
+@media screen and (max-width: 1299.98px) {
+    .section-third__form {
+        justify-content: center;
+        column-gap: 16px;
+    }
+}
+
+/* Mobile - no more than 767.98px*/
+@media screen and (max-width: 767.98px) {
+    .section-third__form {
+        width: 100%;
+        flex-wrap: wrap;
+        row-gap: 64px;
+        margin-top: 60px;
+    }
+}
+
+.section-third__form_field {
+    display: flex;
+    flex-direction: column;
+    width: 230px;
+    padding-bottom: 8px;
+    border-bottom: rgba(54, 54, 54, .3) solid 1px;
+    height: 52px;
+}
+
+/* Mobile - no more than 767.98px*/
+@media screen and (max-width: 767.98px) {
+    .section-third__form_field {
+        border-bottom: rgba(255, 255, 255, .3) solid 1px;
+        width: 100%;
+        max-width: 340px;
+    }
+}
+
+.section-third__form_field_name {
+    font-size: 13px;
+    line-height: 163.7%;
+    color: rgba(54, 54, 54, .5);
+}
+
+/* Mobile - no more than 767.98px*/
+@media screen and (max-width: 767.98px) {
+    .section-third__form_field_name {
+        color: rgba(255, 255, 255, .5);
+    }
+}
+
+.section-third__form_field_value {
+    font-size: 14px;
+    line-height: 163.7%;
+    color: rgb(54, 54, 54);
+}
+
+/* Mobile - no more than 767.98px*/
+@media screen and (max-width: 767.98px) {
+    .section-third__form_field_value {
+        color: #ffffff;
+    }
+}
+
+.section-third__form_button {
+    width: 200px;
+}
+
+/* Mobile - no more than 767.98px*/
+@media screen and (max-width: 767.98px) {
+    .section-third__form_button {
+        width: 100%;
+        max-width: 340px;
+    }
+}
+
+/* Mobile - no more than 767.98px*/
+@media screen and (max-width: 767.98px) {
+    .section-third__form > button {
+        display: none;
+    }
+}
+
+.section-third__checkbox {
+    margin-top: 32px;
+}
+
+.section-third__checkbox_text {
+    font-size: 14px;
+    line-height: 163.7%;
+    color: #181818;
+    margin-left: 8px;
+    text-align: center;
+}
+
+/* Mobile - no more than 767.98px*/
+@media screen and (max-width: 767.98px) {
+    .section-third__checkbox_text {
+        color: #ffffff;
+    }
+}
+
+.section-third__flex > button {
+    display: none;
+}
+
+/* Mobile - no more than 767.98px*/
+@media screen and (max-width: 767.98px) {
+    .section-third__flex > button {
+        display: block;
+        margin-top: 60px;
+        margin-bottom: -24px;
+    }
+}
