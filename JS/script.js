@@ -1,5 +1,5 @@
 let images = [{
-    url: "../images/Slider_img/image_1.png",
+    url: "images/Slider_img/image_1.png",
     title: "Rostov-on-Don, Admiral",
     desc: "Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction market we have made happy more than 1000 families",
     city: "Rostov-on-Don, LCD admiral",
@@ -7,7 +7,7 @@ let images = [{
     time: "3.5 months",
     cost: "Upon request"
   }, {
-    url: "../images/Slider_img/image_2.png",
+    url: "images/Slider_img/image_2.png",
     title: "Sochi Thieves",
     desc: "State-of-the-art amenities, including a rooftop terrace, fitness center, and concierge service. These apartments offer easy access to vibrant urban amenities and tranquil green spaces",
     city: "Sochi, Thieves",
@@ -15,7 +15,7 @@ let images = [{
     time: "4 months",
     cost: "Upon request"
   }, {
-    url: "../images/Slider_img/image_3.png",
+    url: "images/Slider_img/image_3.png",
     title: "Rostov-on-Don Patriotic",
     desc: "Modern apartments offer panoramic views, a fully equipped kitchen, and a luxurious living space designed for ultimate comfort and convenience. Escape the hustle and bustle while enjoying the vibrant city",
     city: "Rostov-on-Don, Patriotic",
