@@ -1,4 +1,4 @@
-let images = [{
+let dataSlider = [{
     url: "images/Slider_img/image_1.png",
     title: "Rostov-on-Don, Admiral",
     desc: "Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction market we have made happy more than 1000 families",
@@ -26,7 +26,7 @@ let images = [{
 
 // Проверяем, что массив возвращает объекты
 function initSlider(options) {
-    if (!images || !images.length) return;
+    if (!dataSlider || !dataSlider.length) return;
 
 
 options = options || {
@@ -34,16 +34,15 @@ options = options || {
     dots: true,
   };
 
-  let sliderImages = document.querySelector(".section-second__apartments-photo-area");
-  let sliderArrows = document.querySelector(".section-second__slider");
-  let sliderDots = document.querySelector(".section-second__slider_dots");
-  let sliderTitles = document.querySelector(".section-second__app-name");
-
-  let sliderDescription = document.querySelector(".section-second__description");
-  let sliderCity = document.querySelector(".section-second__property_city").querySelector(".section-second__property-value");
-  let sliderArea = document.querySelector(".section-second__property_apartment-area").querySelector(".section-second__property-value");
-  let sliderTime = document.querySelector(".section-second__property_repair-time").querySelector(".section-second__property-value");
-  let sliderCost = document.querySelector(".section-second__property_repair-cost").querySelector(".section-second__property-value");
+  let sliderImages = document.querySelector(".section-second__apartments-photo-area"),
+      sliderArrows = document.querySelector(".section-second__slider"),
+      sliderDots = document.querySelector(".section-second__slider_dots"),
+      sliderTitles = document.querySelector(".section-second__app-name"),
+      sliderDescription = document.querySelector(".section-second__description"),
+      sliderCity = document.querySelector(".section-second__property_city").querySelector(".section-second__property-value"),
+      sliderArea = document.querySelector(".section-second__property_apartment-area").querySelector(".section-second__property-value"),
+      sliderTime = document.querySelector(".section-second__property_repair-time").querySelector(".section-second__property-value"),
+      sliderCost = document.querySelector(".section-second__property_repair-cost").querySelector(".section-second__property-value");
   
 
   initImages();
@@ -64,8 +63,8 @@ options = options || {
   initCost();
   
   function initImages() {
-    images.forEach((image, index) => {
-      let imageDiv = `<img class="section-second__apartments-photo n${index} ${index === 0? "active" : ""}" src="${images[index].url}" data-index="${index}" alt="Фото квартиры">`;
+    dataSlider.forEach((image, index) => {
+      let imageDiv = `<img class="section-second__apartments-photo n${index} ${index === 0? "active" : ""}" src="${dataSlider[index].url}" data-index="${index}" alt="Фото квартиры">`;
       sliderImages.innerHTML += imageDiv;
     });
   }
@@ -76,9 +75,9 @@ options = options || {
         let curNumber = +sliderImages.querySelector(".active").dataset.index;
         let nextNumber;
         if (arrow.classList.contains("left")) {
-          nextNumber = curNumber === 0? images.length - 1 : curNumber - 1;
+          nextNumber = curNumber === 0? dataSlider.length - 1 : curNumber - 1;
         } else {
-          nextNumber = curNumber === images.length - 1? 0 : curNumber + 1;
+          nextNumber = curNumber === dataSlider.length - 1? 0 : curNumber + 1;
         }
         moveSlider(nextNumber);
       });
@@ -86,7 +85,7 @@ options = options || {
   }
   
   function initDots() {
-    images.forEach((image, index) => {
+    dataSlider.forEach((image, index) => {
       let dot = `<div class="section-second__slider_dots_dot n${index} ${index === 0? "active" : ""}" data-index="${index}"></div>`;
       sliderDots.innerHTML += dot;
     });
@@ -117,8 +116,8 @@ options = options || {
   }
   
   function initTitles() {
-    images.forEach((image, index) => {
-      let title = `<div class="section-second__app-name_item n${index} ${index === 0? "active" : ""}" data-index="${index}">${images[index].title}</div>`;
+    dataSlider.forEach((image, index) => {
+      let title = `<div class="section-second__app-name_item n${index} ${index === 0? "active" : ""}" data-index="${index}">${dataSlider[index].title}</div>`;
       sliderTitles.innerHTML += title;
     });
     sliderTitles.querySelectorAll(".section-second__app-name_item").forEach(title => {
@@ -128,65 +127,48 @@ options = options || {
     })
   }
 
-
-  function initArrows() {
-    sliderArrows.querySelectorAll(".section-second__slider_arrow").forEach(arrow => {
-      arrow.addEventListener("click", function() {
-        let curNumber = +sliderImages.querySelector(".active").dataset.index;
-        let nextNumber;
-        if (arrow.classList.contains("left")) {
-          nextNumber = curNumber === 0? images.length - 1 : curNumber - 1;
-        } else {
-          nextNumber = curNumber === images.length - 1? 0 : curNumber + 1;
-        }
-        moveSlider(nextNumber);
-      });
-    });
-  }
-
-
   function initDescription() {
-    sliderDescription.innerText = images[0].desc;
+    sliderDescription.innerText = dataSlider[0].desc;
   }
 
   function changeDescription(num) {
-    sliderDescription.innerText = images[num].desc;
+    sliderDescription.innerText = dataSlider[num].desc;
   }
 
 
   function initCity() {
-    sliderCity.innerText = images[0].city;
+    sliderCity.innerText = dataSlider[0].city;
   }
 
   function changeCity(num) {
-    sliderCity.innerText = images[num].city;
+    sliderCity.innerText = dataSlider[num].city;
   }
 
 
   function initArea() {
-    sliderArea.innerText = images[0].area;
+    sliderArea.innerText = dataSlider[0].area;
   }
 
   function changeArea(num) {
-    sliderArea.innerText = images[num].area;
+    sliderArea.innerText = dataSlider[num].area;
   }
 
 
   function initTime() {
-    sliderTime.innerText = images[0].time;
+    sliderTime.innerText = dataSlider[0].time;
   }
 
   function changeTime(num) {
-    sliderTime.innerText = images[num].time;
+    sliderTime.innerText = dataSlider[num].time;
   }
 
 
   function initCost() {
-    sliderCost.innerText = images[0].cost;
+    sliderCost.innerText = dataSlider[0].cost;
   }
 
   function changeCost(num) {
-    sliderCost.innerText = images[num].cost;
+    sliderCost.innerText = dataSlider[num].cost;
   }
 
 }
